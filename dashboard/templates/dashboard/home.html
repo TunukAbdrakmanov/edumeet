@@ -1,0 +1,128 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+  <h3>Добро пожаловать на портал обучения студентов здесь вы можете найти единомышленников </h3>
+
+  <hr> <br>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="{% url 'notes' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/notes.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Заметки
+            </h5>
+            Создавайте заметки, чтобы обращаться к ним позже. Они хранятся постоянно, пока не будут удалены
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="{% url 'homework' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/homework.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Домашняя работа
+            </h5>
+            Добавьте домашние задания и назначьте им сроки выполнения. Они будут отображаться в порядке приоритетности по срокам выполнения
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{% url 'youtube' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/youtube.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Youtube
+            </h5>
+            Вы можете найти в Youtube и выбрать нужное видео для воспроизведения
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{% url 'todo' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/todo.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Список дел
+            </h5>
+            Добавляйте списки дел на день и удаляйте их по мере завершения работы
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="row">
+    <div class="col-md-3 ">
+      <a href="{% url 'books' %}">
+        <div class="card mt-20">
+          <img class="card-img-top" src="{% static 'images/books.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Книги
+            </h5>
+            Просматривайте книги из списка книжного меню
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+    <div class="col-md-3">
+      <a href="{% url 'dictionary' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/dictionary.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Словарь
+            </h5>
+            Словарь из книги не дает вам покоя? Нет проблем, введите слово, и значение будет показано
+            почти мгновенно.
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{% url 'wiki' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/wiki.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Википедия
+            </h5>
+            Домашняя работа и задания? Поиск в Википедии для получения быстрых результатов
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="col-md-3">
+      <a href="{% url 'conversion' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/conversion.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Конвертация
+            </h5>
+            Ознакомьтесь с таблицей пересчета, которая поможет вам перевести измерения в более привычные по вашему выбору.
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+</section>
+{% endblock content %}
